@@ -1,9 +1,9 @@
 import { useRouter } from "next/router";
-import { Container, Item, ItemIcon, CustomLink } from "./styles";
-import ArrowDownIcon from "../icons/arrow-down";
 import Link from "next/link";
 
+import ArrowDownIcon from "../icons/arrow-down";
 import listNav from "../../const/nav";
+import { Container, Item, ItemIcon, CustomLink } from "./styles";
 
 const Navbar = () => {
   const { pathname } = useRouter();

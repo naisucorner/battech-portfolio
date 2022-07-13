@@ -1,26 +1,24 @@
-import { Container, Logo, Menu, Divider, Button } from "./styles";
-import LogoIcon from "../icons/logo";
 import Navbar from "../navbar";
 import SelectLanguage from "../select-language";
+import LogoIcon from "../icons/logo";
+import { Container, Logo, Menu, Divider, Button } from "./styles";
 
-const Layout = () => {
-  return (
-    <Container>
-      <Logo>
-        <LogoIcon />
-      </Logo>
+const Header = () => (
+  <Container>
+    <Logo>
+      <LogoIcon />
+    </Logo>
 
-      <Menu>
-        <Navbar />
+    <Menu>
+      <Navbar />
 
-        <Divider />
+      <Divider />
 
-        <SelectLanguage />
+      <SelectLanguage />
 
-        <Button>Buy Battech</Button>
-      </Menu>
-    </Container>
-  );
-};
+      <Button>Buy Battech</Button>
+    </Menu>
+  </Container>
+);
 
-export default Layout;
+export default Header;

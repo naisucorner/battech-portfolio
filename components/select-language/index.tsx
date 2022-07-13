@@ -1,8 +1,8 @@
 import { useState, useRef } from "react";
 import PublicIcon from "@mui/icons-material/Public";
-import { Container, Icon, Select, Option, Item } from "./styles";
 
 import useOnClickOutside from "../../hook/useClickOutSide";
+import { Container, Icon, Select, Option, Item } from "./styles";
 
 const listLang = ["EN", "VI"];
 
