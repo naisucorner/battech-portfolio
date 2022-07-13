@@ -38,6 +38,13 @@ export const FilmSub = styled.div`
   line-height: 25px;
   color: #ffffff;
   width: 589px;
+  margin-top: 50px;
+`;
+
+export const ButtonGroup = styled.div`
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
 `;
 
 export const Button = styled.button`
@@ -45,4 +52,75 @@ export const Button = styled.button`
   background: transparent;
   border-radius: 22px;
   border: 1px solid #316fdc;
+  color: #316fdc;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    background: #fff;
+    color: #101010;
+  }
 `;
+
+export const ButtonIcon = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+`;
+
+export const ServicesBox = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 75px;
+  padding-bottom: 85px;
+  background: #fff;
+`;
+
+export const ServicesTitle = styled.div`
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 65px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 60px;
+`;
+
+export const Services = styled.div`
+  display: flex;
+  gap: 40px;
+  align-items: center;
+`;
+
+export const Service = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+`;
+
+export const ServiceImage = styled.div`
+  height: 294px;
+  width: 100%;
+  border-radius: 10px;
+`;
+
+export const ServiceTitle = styled.div`
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 65px;
+  text-align: center;
+  color: #000000;
+  margin-top: 15px;
+`;
+
+export const ServiceDescription = styled.div`
+  margin-top: 15px;
+`;
+
+export const ServiceButton = styled.div``;

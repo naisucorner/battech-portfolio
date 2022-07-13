@@ -76,6 +76,12 @@ export const Button = styled.button`
   font-size: 16px;
   line-height: 18px;
   cursor: pointer;
+  border: none;
+
+  &:hover {
+    background: #fff;
+    color: #101010;
+  }
 `;
 
 export const Info = styled.div`
