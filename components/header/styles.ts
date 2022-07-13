@@ -6,6 +6,10 @@ export const Container = styled.div`
   justify-content: space-between;
   background: #000000;
   padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
 `;
 
 export const Logo = styled.div`

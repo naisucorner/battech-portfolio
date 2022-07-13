@@ -16,6 +16,7 @@ import {
   Item,
   ItemIcon,
   CustomLink,
+  Social,
 } from "./styles";
 import LogoIcon from "../icons/logo2";
 import FacebookIcon from "../icons/facebook";
@@ -66,11 +67,25 @@ const Footer = () => {
         </Detail>
 
         <SocialGroup>
-          <FacebookIcon />
-          <TwitterIcon />
-          <YoutubeIcon />
-          <InIcon />
-          <DiscordIcon />
+          <Social>
+            <FacebookIcon />
+          </Social>
+
+          <Social>
+            <TwitterIcon />
+          </Social>
+
+          <Social>
+            <YoutubeIcon />
+          </Social>
+
+          <Social>
+            <InIcon />
+          </Social>
+
+          <Social>
+            <DiscordIcon />
+          </Social>
         </SocialGroup>
 
         <Copyrights>Copyrights © 2022 BATTECH. All rights reserved.</Copyrights>

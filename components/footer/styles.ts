@@ -119,6 +119,17 @@ export const SocialGroup = styled.div`
   margin-bottom: 85px;
 `;
 
+export const Social = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+`;
+
 export const Copyrights = styled.div`
   font-weight: 400;
   font-size: 16px;
