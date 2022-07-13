@@ -231,3 +231,46 @@ export const SlideDes = styled.div`
   color: #000000;
   margin-top: 13px;
 `;
+
+export const NewsBox = styled.div`
+  padding: 52px 52px 90px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const NewsTitle = styled.div`
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 65px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 37px;
+`;
+
+export const News = styled.div`
+  display: flex;
+  gap: 44px;
+`;
+
+export const New = styled.div`
+  height: 235px;
+  width: 200px;
+  background: #ffffff;
+  border: 5px solid rgba(49, 111, 220, 0.2);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+`;
+
+export const NewImage = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+`;

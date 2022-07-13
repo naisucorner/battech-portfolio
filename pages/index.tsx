@@ -5,6 +5,14 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import Image1 from "../public/images/1.png";
+import Image2 from "../public/images/2.png";
+import TwentyFour from "../public/images/24.png";
+import Vnexpress from "../public/images/vnexpress.png";
+import Vtc from "../public/images/vtc.png";
+import Dantri from "../public/images/dantri.png";
+import Hanoimoi from "../public/images/hanoimoi.png";
+import Image from "next/image";
+
 import Avatar from "../public/images/ava.png";
 import ReviewIcon from "../components/icons/review";
 import {
@@ -35,6 +43,11 @@ import {
   SlideDes,
   SlideSub,
   SlideTitle,
+  NewsBox,
+  NewsTitle,
+  News,
+  New,
+  NewImage,
 } from "./styles";
 
 import "swiper/css";
@@ -84,7 +97,7 @@ const Home: NextPage = () => {
 
         <Services>
           <Service>
-            <ServiceImage src={Image1} />
+            <ServiceImage src={Image2} height="294px" width="588px" />
             <ServiceTitle>Phòng họp VR</ServiceTitle>
             <ServiceDescription>
               Do you miss having in-person meetings? Do you want to feel
@@ -99,7 +112,7 @@ const Home: NextPage = () => {
           </Service>
 
           <Service>
-            <ServiceImage src={Image1} />
+            <ServiceImage src={Image1} height="294px" width="588px" />
             <ServiceTitle>Meetings</ServiceTitle>
             <ServiceDescription>
               Do you miss having in-person meetings? Do you want to feel
@@ -177,6 +190,52 @@ const Home: NextPage = () => {
           </Carrousel>
         </ReviewContent>
       </ReviewBox>
+
+      <NewsBox>
+        <NewsTitle>Báo chí nói gì về chúng tôi</NewsTitle>
+
+        <News>
+          <New>
+            <NewImage>
+              <Image src={TwentyFour} />
+            </NewImage>
+
+            <ServiceButton>Learn More</ServiceButton>
+          </New>
+
+          <New>
+            <NewImage>
+              <Image src={Vnexpress} />
+            </NewImage>
+
+            <ServiceButton>Learn More</ServiceButton>
+          </New>
+
+          <New>
+            <NewImage>
+              <Image src={Vtc} width="73px" height="73px" />
+            </NewImage>
+
+            <ServiceButton>Learn More</ServiceButton>
+          </New>
+
+          <New>
+            <NewImage>
+              <Image src={Dantri} />
+            </NewImage>
+
+            <ServiceButton>Learn More</ServiceButton>
+          </New>
+
+          <New>
+            <NewImage>
+              <Image src={Hanoimoi} />
+            </NewImage>
+
+            <ServiceButton>Learn More</ServiceButton>
+          </New>
+        </News>
+      </NewsBox>
     </Container>
   );
 };
