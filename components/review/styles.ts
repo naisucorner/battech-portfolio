@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 export const Container = styled.div`
-  height: 539px;
   background: rgba(49, 111, 220, 0.8);
   display: flex;
   flex-direction: column;
@@ -18,17 +17,25 @@ export const Title = styled.div`
   text-align: center;
   color: #ffffff;
   padding-top: 37px;
+  margin-bottom: 40px;
 `;
 
 export const Content = styled.div`
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 50px;
 `;
 
-export const Icon = styled.div``;
+export const Icon = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+`;
 
 export const Carrousel = styled.div`
   width: 570px;
+  margin-bottom: 30px;
 `;
 
 export const CustomSwiper = styled(Swiper)`

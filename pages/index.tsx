@@ -6,6 +6,8 @@ import Services from "../components/services";
 import Review from "../components/review";
 import News from "../components/news";
 import Partner from "../components/partner";
+import Trial from "../components/trial";
+import Connected from "../components/connected";
 import { Container } from "./styles";
 
 import "swiper/css";
@@ -18,11 +20,13 @@ const Home: NextPage = () => {
       <Head>
         <title>Home</title>
       </Head>
-      <Film /> 
+      <Film />
+      <Connected />
       <Services />
       <Review />
       <News />
       <Partner />
+      <Trial />
     </Container>
   );
 };

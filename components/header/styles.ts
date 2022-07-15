@@ -44,4 +44,5 @@ export const Button = styled.div`
   align-items: center;
   cursor: pointer;
   margin-left: 20px;
+  white-space: nowrap;
 `;

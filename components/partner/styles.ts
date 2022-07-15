@@ -33,4 +33,5 @@ export const Item = styled.div`
   position: relative;
   width: 150px;
   max-width: 150px;
+  cursor: pointer;
 `;
