@@ -15,9 +15,20 @@ export const Container = styled.div`
 
 export const Center = styled.div`
   display: flex;
-  height: 363px;
+  flex-direction: column;
   width: 866px;
   margin-bottom: 70px;
+`;
+
+export const CenterBase = styled.div`
+  height: 320px;
+`;
+
+export const CanvasContainer = styled.div`
+  height: 400px;
+  position: relative;
+  top: 100px;
+  z-index: 999;
 `;
 
 export const Left = styled.div`
