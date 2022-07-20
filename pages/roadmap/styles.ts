@@ -44,6 +44,7 @@ export const Body = styled.div`
   align-items: center;
   background: #f5f5f5;
   padding: 22px;
+  padding-bottom: 60px;
 `;
 
 export const Content = styled.div`
@@ -71,6 +72,7 @@ export const ContentHeaderButton = styled.div`
   border-radius: 0 0 3px 8px;
   display: flex;
   align-items: center;
+  top: -1px;
 
   &::after {
     content: "";
@@ -79,7 +81,7 @@ export const ContentHeaderButton = styled.div`
     width: 0;
     border-style: solid;
     border-color: #316fdc transparent;
-    right: -25px;
+    right: -24px;
     border-width: 53px 25px 0 0;
   }
 `;
@@ -100,33 +102,33 @@ export const ContentBody = styled.div`
   gap: 10px;
 `;
 
-export const Item = styled.div`
+export const Year = styled.div`
   display: flex;
   flex-direction: column;
 `;
 
-export const Year = styled.div`
+export const Number = styled.div`
   font-weight: 700;
   font-size: 20px;
   line-height: 35px;
   color: #316fdc;
 `;
 
-export const ItemContent = styled.div`
+export const Items = styled.div`
   display: flex;
   flex-direction: column;
   padding: 22px 40px;
-  border-left: 2px solid black;
+  border-left: 1px solid black;
   padding-bottom: 15px;
   position: relative;
-  height: 100px;
   left: 20px;
+  gap: 25px;
 
   &::before,
   &::after {
     position: absolute;
     bottom: -6px;
-    left: -5px;
+    left: -4px;
     height: 8px;
     width: 8px;
     background: black;
@@ -136,8 +138,14 @@ export const ItemContent = styled.div`
 
   :after {
     top: 0;
-    left: -5px;
+    left: -4px;
   }
+`;
+
+export const ItemContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 `;
 
 export const Logo = styled.div`
@@ -151,4 +159,63 @@ export const LogoText = styled.div`
   font-size: 20px;
   line-height: 35px;
   color: #316fdc;
+  text-transform: uppercase;
+`;
+
+export const LogoTitle = styled.div`
+  color: #000;
+  text-transform: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 35px;
+`;
+
+export const Date = styled.div`
+  display: flex;
+  margin-bottom: 18px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  /* border-bottom: 1px solid #316fdc; */
+  color: #000000;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    bottom: -3px;
+    left: -5px;
+    height: 6px;
+    width: 6px;
+    background: #316fdc;
+    content: "";
+    border-radius: 3px;
+  }
+`;
+
+export const DateValue = styled.div`
+  padding-bottom: 5px;
+  padding-left: 10px;
+  border-bottom: 1px solid #316fdc;
+  border-bottom-right-radius: 20px;
+  padding-right: 40px;
+  position: relative;
+`;
+
+export const DateBorder = styled.div`
+  border-color: red;
+  border-radius: 100% 0% 100% 0% / 76% 25% 75% 24%;
+  height: 100%;
+  width: 50px;
+`;
+
+export const DateEmpty = styled.div`
+  border-top: 1px solid #316fdc;
+  flex: 1;
+  border-top-left-radius: 14px;
+`;
+
+export const Events = styled.div`
+  display: flex;
+  flex-direction: column;
+  /* gap: 100px; */
 `;

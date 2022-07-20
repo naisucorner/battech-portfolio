@@ -11,7 +11,10 @@ export const Title = styled.div`
   gap: 5px;
 `;
 
-export const TitleLogo = styled.div``;
+export const TitleLogo = styled.div`
+  cursor: pointer;
+  width: 20px;
+`;
 
 export const TitleText = styled.div`
   font-weight: 700;
@@ -25,4 +28,5 @@ export const Body = styled.div`
   font-size: 14px;
   line-height: 25px;
   color: #000000;
+  margin-left: 25px;
 `;
