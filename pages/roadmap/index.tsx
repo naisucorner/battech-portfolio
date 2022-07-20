@@ -4,11 +4,9 @@ import LogoIcon from "../../components/icons/logo3";
 
 import Signup from "../../components/signup";
 import ToggleContent from "../../components/toggle-content";
+import PageHeader from "../../components/page-header";
 import {
   Container,
-  Header,
-  HeaderSub,
-  HeaderTitle,
   Body,
   Content,
   ContentHeader,
@@ -372,13 +370,11 @@ const Roadmap: NextPage = () => {
         <title>Roadmap</title>
       </Head>
 
-      <Header>
-        <HeaderTitle>battech ROADMAP</HeaderTitle>
-        <HeaderSub>
-          Discover the story of how BATTECH emerged from venture building across
-          various tech industries to metaverse innovations.
-        </HeaderSub>
-      </Header>
+      <PageHeader
+        title="Battech ROADMAP"
+        sub="Discover the story of how BATTECH emerged from venture building across
+          various tech industries to metaverse innovations."
+      />
 
       <Body>
         <Content>
