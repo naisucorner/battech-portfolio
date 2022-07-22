@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 327px;
+  min-height: 327px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -11,6 +11,7 @@ export const Container = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 20px;
 `;
 
 export const Body = styled.div`
@@ -20,12 +21,27 @@ export const Body = styled.div`
   width: 70%;
 `;
 
-export const Logo = styled.div``;
+export const Logo = styled.div`
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 600px) {
+    justify-content: center;
+  }
+`;
 
 export const Detail = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 export const Text = styled.div`

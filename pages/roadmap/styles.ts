@@ -41,6 +41,7 @@ export const ContentHeaderButton = styled.div`
   display: flex;
   align-items: center;
   top: -1px;
+  white-space: nowrap;
 
   &::after {
     content: "";

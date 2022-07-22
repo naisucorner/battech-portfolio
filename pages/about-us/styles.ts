@@ -28,10 +28,19 @@ export const Content = styled.div`
   justify-content: center;
 `;
 
-export const IntroduceImage = styled.div``;
+export const IntroduceImage = styled.div`
+  /* width: 100%; */
+
+  @media screen and (max-width: 600px) {
+    img {
+      width: 100%;
+    }
+  }
+`;
 
 export const IntroduceContent = styled.div`
-  width: 586px;
+  max-width: 586px;
+  padding: 20px;
 `;
 
 export const IntroduceHeader = styled.div`
@@ -157,6 +166,11 @@ export const Value = styled.div`
 
 export const ValueImage = styled.img`
   height: 622px;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 export const ValueBody = styled.div`
@@ -193,7 +207,7 @@ export const VisionTitle = styled.div`
 `;
 
 export const VisionBody = styled.div`
-  width: 590px;
+  max-width: 590px;
   margin-top: 15px;
   font-weight: 400;
   font-size: 16px;
@@ -215,7 +229,8 @@ export const TeamShape = styled.div`
   /* position: absolute; */
   /* top: 50%; */
   position: relative;
-  height: 522px;
+  min-height: 522px;
+  padding: 20px;
   background: #ffdca8;
   width: 100%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
