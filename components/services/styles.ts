@@ -18,6 +18,13 @@ export const Title = styled.div`
   text-align: center;
   color: #000000;
   margin-bottom: 40px;
+
+  @media screen and (max-width: 550px) {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 65px;
+    margin-bottom: 0;
+  }
 `;
 
 export const Body = styled.div`
@@ -25,13 +32,14 @@ export const Body = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
+  padding: 20px;
 `;
 
 export const Service = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 540px;
+  max-width: 540px;
 `;
 
 export const ServiceImage = styled(Image)`
@@ -46,6 +54,12 @@ export const ServiceTitle = styled.div`
   line-height: 65px;
   text-align: center;
   color: #000000;
+
+  @media screen and (max-width: 550px) {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 65px;
+  }
 `;
 
 export const Description = styled.div`

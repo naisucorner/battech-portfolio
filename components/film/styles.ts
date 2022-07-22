@@ -17,14 +17,21 @@ export const Container = styled.div`
 export const Info = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 30px;
 `;
 
 export const Title = styled.div`
   font-weight: 700;
   font-size: 55px;
   line-height: 65px;
-  width: 806px;
+  max-width: 806px;
   color: #ffffff;
+
+  @media screen and (max-width: 830px) {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+  }
 `;
 
 export const Sub = styled.div`
@@ -32,12 +39,13 @@ export const Sub = styled.div`
   font-size: 20px;
   line-height: 25px;
   color: #ffffff;
-  width: 589px;
+  max-width: 589px;
   margin-top: 50px;
 `;
 
 export const Buttons = styled.div`
   display: flex;
+  flex-wrap: wrap;
   margin-top: 30px;
   gap: 20px;
 `;
@@ -55,6 +63,7 @@ export const Button = styled.button`
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  white-space: nowrap;
 
   &:hover {
     background: #fff;

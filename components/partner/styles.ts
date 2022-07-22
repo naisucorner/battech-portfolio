@@ -16,6 +16,13 @@ export const Title = styled.div`
   text-align: center;
   color: #ffffff;
   margin-bottom: 70px;
+
+  @media screen and (max-width: 550px) {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 65px;
+    margin-bottom: 10px;
+  }
 `;
 
 export const Groups = styled.div`
@@ -23,6 +30,10 @@ export const Groups = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: 65px;
+
+  @media screen and (max-width: 550px) {
+    gap: 10px;
+  }
 `;
 
 export const Item = styled.div`

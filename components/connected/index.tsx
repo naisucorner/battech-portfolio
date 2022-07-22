@@ -11,11 +11,14 @@ import {
   Center,
   CanvasContainer,
   CenterBase,
+  Peoples,
 } from "./styles";
 import React, { Suspense } from "react";
 import { useLoader } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { TextureLoader } from "three/src/loaders/TextureLoader";
+
+import useWindowSize from "../../hook/useWindowSize";
 
 function Scene() {
   const [colorMap, displacementMap, normalMap, roughnessMap, aoMap] = useLoader(
@@ -26,9 +29,9 @@ function Scene() {
   return (
     <>
       <ambientLight intensity={3} color="#0047AB" />
-      {/* <directionalLight /> */}
+
       <mesh>
-        <sphereBufferGeometry args={[3, 100, 100]} />
+        <sphereBufferGeometry args={[2.5, 100, 100]} />
         <meshStandardMaterial
           displacementScale={0.2}
           map={colorMap}
@@ -42,57 +45,63 @@ function Scene() {
   );
 }
 
-const Connected = () => (
-  <Container>
-    <Left>
-      <img
-        src="./images/base.png"
-        width="100%"
-        height="100%"
-        style={{ opacity: "70%" }}
-      />
-      <Girl src="./images/girl.png" />
-    </Left>
+const Connected = () => {
+  const { width } = useWindowSize();
 
-    <Center>
-      <CanvasContainer>
-        <Canvas>
-          <Suspense fallback={null}>
-            <Scene />
-            <OrbitControls autoRotate enableZoom={false} />
-          </Suspense>
-        </Canvas>
-      </CanvasContainer>
+  return (
+    <Container>
+      <Center>
+        <CanvasContainer>
+          <Canvas>
+            <Suspense fallback={null}>
+              <Scene />
+              <OrbitControls autoRotate enableZoom={false} />
+            </Suspense>
+          </Canvas>
+        </CanvasContainer>
 
-      <CenterBase>
-        <img
+        <CenterBase
           src="./images/chan-qua-cau.png"
           width="100%"
           height="100%"
           style={{ opacity: "70%" }}
         />
-      </CenterBase>
-    </Center>
+      </Center>
 
-    <Right>
-      <img
-        src="./images/base.png"
-        width="100%"
-        height="100%"
-        style={{ opacity: "70%" }}
-      />
-      <Boy src="./images/boy.png" />
-    </Right>
+      <Box>
+        {width && width > 1020 && (
+          <>
+            <Left>
+              <img
+                src="./images/base.png"
+                width="100%"
+                height="100%"
+                style={{ opacity: "70%" }}
+              />
+              <Girl src="./images/girl.png" />
+            </Left>
 
-    <Box>
-      <BoxTitle>Feel Connected</BoxTitle>
+            <Right>
+              <img
+                src="./images/base.png"
+                width="100%"
+                height="100%"
+                style={{ opacity: "70%" }}
+              />
+              <Boy src="./images/boy.png" />
+            </Right>
+          </>
+        )}
 
-      <BoxSub>
-        From the first virtual handshake, Battech makes people feel like they
-        are closer together, boosting team cohesion and engagement
-      </BoxSub>
-    </Box>
-  </Container>
-);
+        <BoxTitle>Feel Connected</BoxTitle>
+
+        <BoxSub>
+          From the first virtual handshake, Battech makes people feel like they
+          are closer together, boosting team cohesion and engagement
+        </BoxSub>
+      </Box>
+    </Container>
+  );
+};
 
 export default Connected;

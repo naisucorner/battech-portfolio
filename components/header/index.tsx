@@ -1,24 +1,37 @@
+import MenuIcon from "@mui/icons-material/Menu";
 import Navbar from "../navbar";
+import useWindowSize from "../../hook/useWindowSize";
 import SelectLanguage from "../select-language";
 import LogoIcon from "../icons/logo";
-import { Container, Logo, Menu, Divider, Button } from "./styles";
+import { Container, Logo, Menu, Divider, Button, MobileMenu } from "./styles";
 
-const Header = () => (
-  <Container>
-    <Logo>
-      <LogoIcon />
-    </Logo>
+const Header = () => {
+  const { width } = useWindowSize();
 
-    <Menu>
-      <Navbar />
+  console.log("width", width);
+  return (
+    <Container>
+      <Logo>
+        <LogoIcon />
+      </Logo>
 
-      <Divider />
+      {width && width > 1530 ? (
+        <Menu>
+          <Navbar />
 
-      <SelectLanguage />
+          <Divider />
 
-      <Button>Buy Battech</Button>
-    </Menu>
-  </Container>
-);
+          <SelectLanguage />
+
+          <Button>Buy Battech</Button>
+        </Menu>
+      ) : (
+        <MobileMenu>
+          <MenuIcon sx={{ color: "white", fontSize: "30px" }} />
+        </MobileMenu>
+      )}
+    </Container>
+  );
+};
 
 export default Header;

@@ -18,6 +18,12 @@ export const Title = styled.div`
   color: #ffffff;
   padding-top: 37px;
   margin-bottom: 40px;
+
+  @media screen and (max-width: 550px) {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 65px;
+  }
 `;
 
 export const Content = styled.div`
@@ -31,11 +37,21 @@ export const Icon = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  max-width: 100%;
+
+  img {
+    max-height: 400px;
+    max-width: 100%;
+  }
 `;
 
 export const Carrousel = styled.div`
-  width: 570px;
+  max-width: 570px;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 550px) {
+    width: 350px;
+  }
 `;
 
 export const CustomSwiper = styled(Swiper)`

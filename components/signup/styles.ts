@@ -10,6 +10,7 @@ export const Container = styled.div`
   background-image: url("./images/bg2.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 `;
 
 export const Body = styled.div`

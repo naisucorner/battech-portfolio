@@ -7,6 +7,10 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 550px) {
+    padding: 30px;
+  }
 `;
 
 export const Title = styled.div`
@@ -16,6 +20,13 @@ export const Title = styled.div`
   text-align: center;
   color: #000000;
   margin-bottom: 37px;
+
+  @media screen and (max-width: 550px) {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 65px;
+    margin-bottom: 10px;
+  }
 `;
 
 export const Body = styled.div`
@@ -23,6 +34,10 @@ export const Body = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   gap: 44px;
+
+  @media screen and (max-width: 550px) {
+    gap: 20px;
+  }
 `;
 
 export const New = styled.div`

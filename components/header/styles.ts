@@ -46,3 +46,8 @@ export const Button = styled.div`
   margin-left: 20px;
   white-space: nowrap;
 `;
+
+export const MobileMenu = styled.div`
+  display: flex;
+  cursor: pointer;
+`;

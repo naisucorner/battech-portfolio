@@ -6,8 +6,9 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   background: #0d0d0d;
-  height: 510px;
+  min-height: 510px;
   width: 100%;
+  padding: 45px;
 `;
 
 export const Logo = styled.div`
@@ -24,7 +25,7 @@ export const Detail = styled.div`
   text-align: center;
   margin-bottom: 20px;
   color: #fff;
-  width: 577px;
+  max-width: 577px;
 `;
 
 export const Socials = styled.div`
@@ -49,4 +50,8 @@ export const Copyrights = styled.div`
   font-size: 16px;
   line-height: 25px;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 `;

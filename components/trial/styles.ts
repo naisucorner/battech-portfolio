@@ -12,6 +12,10 @@ export const Container = styled.div`
   background-image: url("./images/trial.png");
   background-repeat: no-repeat;
   background-position: 30% 100%;
+
+  @media screen and (max-width: 550px) {
+    padding: 20px;
+  }
 `;
 
 export const Info = styled.div`
@@ -95,6 +99,10 @@ export const CheckText = styled.div`
   font-size: 16px;
   line-height: 10px;
   color: #ffffff;
+
+  @media screen and (max-width: 550px) {
+    line-height: 20px;
+  }
 `;
 
 export const Button = styled.button`

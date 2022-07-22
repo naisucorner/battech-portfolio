@@ -21,7 +21,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-const sildeData = [
+const slideData = [
   {
     name: "slide1",
     image: Avatar,
@@ -52,7 +52,8 @@ const Review = () => (
 
     <Content>
       <Icon>
-        <ReviewIcon />
+        {/* <ReviewIcon /> */}
+        <img src="./images/review.jpg" />
       </Icon>
 
       <Carrousel>
@@ -64,7 +65,7 @@ const Review = () => (
           navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
         >
-          {sildeData.map(({ name, image, title, sub, des }) => (
+          {slideData.map(({ name, image, title, sub, des }) => (
             <SwiperSlide key={name}>
               <CustomSlide>
                 <SlideAvatar src={image} width="96px" height="96px" />

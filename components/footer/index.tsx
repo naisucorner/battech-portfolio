@@ -1,16 +1,21 @@
 import Latest from "../latest";
 import Info from "../info";
 import Menu from "../menu";
+import useWindowSize from "../../hook/useWindowSize";
 import { Container } from "./styles";
 
-const Footer = () => (
-  <Container>
-    <Latest />
+const Footer = () => {
+  const { width } = useWindowSize();
 
-    <Info />
+  return (
+    <Container>
+      <Latest />
 
-    <Menu />
-  </Container>
-);
+      <Info />
+
+      {width && width > 1530 && <Menu />}
+    </Container>
+  );
+};
 
 export default Footer;

@@ -16,12 +16,16 @@ export const Container = styled.div`
 export const Center = styled.div`
   display: flex;
   flex-direction: column;
-  width: 866px;
+  /* width: 866px; */
   margin-bottom: 70px;
+  width: 100%;
+  max-width: 600px;
 `;
 
-export const CenterBase = styled.div`
+export const CenterBase = styled.img`
   height: 320px;
+  top: -30px;
+  position: relative;
 `;
 
 export const CanvasContainer = styled.div`
@@ -29,6 +33,7 @@ export const CanvasContainer = styled.div`
   position: relative;
   top: 100px;
   z-index: 999;
+  width: 100%;
 `;
 
 export const Left = styled.div`
@@ -36,7 +41,7 @@ export const Left = styled.div`
   bottom: 20px;
   left: 20px;
   height: 433px;
-  width: 433px;
+  max-width: 433px;
   z-index: 99;
 `;
 
@@ -53,8 +58,14 @@ export const Girl = styled.img`
   position: absolute;
   bottom: 150px;
   left: 95px;
-  width: 100%;
-  height: 100%;
+  width: 500px;
+  height: 450px;
+`;
+
+export const Peoples = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 export const Boy = styled.img`
@@ -68,8 +79,10 @@ export const Boy = styled.img`
 export const Box = styled.div`
   display: flex;
   flex-direction: column;
-  width: 486px;
+  max-width: 486px;
   margin-bottom: 153px;
+  z-index: 99;
+  padding: 44px;
 `;
 
 export const BoxTitle = styled.div`
@@ -78,6 +91,7 @@ export const BoxTitle = styled.div`
   line-height: 65px;
   text-align: center;
   color: #ffffff;
+  white-space: nowrap;
 `;
 
 export const BoxSub = styled.div`
