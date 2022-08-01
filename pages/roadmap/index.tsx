@@ -5,6 +5,7 @@ import LogoIcon from "../../components/icons/logo3";
 import Signup from "../../components/signup";
 import ToggleContent from "../../components/toggle-content";
 import PageHeader from "../../components/page-header";
+import HeaderShape from "../../components/header-shape";
 import {
   Container,
   Body,
@@ -378,14 +379,10 @@ const Roadmap: NextPage = () => {
 
       <Body>
         <Content>
-          <ContentHeader>
-            <ContentHeaderButton>Our Roadmap</ContentHeaderButton>
-
-            <ContentHeaderText>
-              Learn how BATTECH has progressed with its ecosystem and when to
-              expect future milestones for our metaverse.
-            </ContentHeaderText>
-          </ContentHeader>
+          <HeaderShape
+            title="Our Roadmap"
+            content="Learn how BATTECH has progressed with its ecosystem and when to expect future milestones for our metaverse."
+          />
 
           <ContentBody>
             {data.map(({ year, items }) => (

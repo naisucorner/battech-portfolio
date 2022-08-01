@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: flex-end;
   align-items: center;
   height: 1289px;
-  background-image: url("./images/connected.png");
+  background-image: url("/images/connected.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -8,7 +8,6 @@ import { Container, Logo, Menu, Divider, Button, MobileMenu } from "./styles";
 const Header = () => {
   const { width } = useWindowSize();
 
-  console.log("width", width);
   return (
     <Container>
       <Logo>

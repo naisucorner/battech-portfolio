@@ -12,9 +12,8 @@ const listNav = [
     path: "/roadmap",
   },
   {
-    name: "Battech Token",
-    path: "/battech-token",
-    children: [],
+    name: "Battech Team",
+    path: "/battech-team",
   },
   {
     name: "Media & News",

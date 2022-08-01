@@ -144,7 +144,7 @@ export const IntroduceButtonIcon = styled.div`
 export const Vision = styled.div`
   min-height: 580px;
   width: 100%;
-  background-image: url("./images/vision.jpg");
+  background-image: url("/images/vision.jpg");
   background-repeat: no-repeat;
   background-position: right top;
   background-size: cover;

@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
+import Image from "../../public/images/bg1.png";
+
 export const Container = styled.div`
   height: 400px;
   width: 100%;
-  background-image: url("./images/bg1.png");
+  background-image: url("/images/bg1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

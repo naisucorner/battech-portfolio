@@ -9,7 +9,7 @@ export const Container = styled.div`
   gap: 99px;
   background: #384169;
   padding: 75px 75px 85px;
-  background-image: url("./images/trial.png");
+  background-image: url("/images/trial.png");
   background-repeat: no-repeat;
   background-position: 30% 100%;
 

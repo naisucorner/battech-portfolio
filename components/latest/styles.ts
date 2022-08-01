@@ -20,6 +20,12 @@ export const Title = styled.div`
   text-transform: uppercase;
   margin-bottom: 13px;
   text-align: center;
+
+  @media screen and (max-width: 830px) {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+  }
 `;
 
 export const Sub = styled.div`
@@ -77,7 +83,6 @@ export const Button = styled.button`
   width: 191px;
   color: #fff;
   text-transform: uppercase;
-  /* margin-left: 12px; */
   border-radius: 24.5px;
   background: #0d0d0d;
   color: #fff;

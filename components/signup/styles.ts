@@ -7,7 +7,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("./images/bg2.png");
+  background-image: url("/images/bg2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -50,6 +50,17 @@ export const Text = styled.div`
   line-height: 32px;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media screen and (max-width: 830px) {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-weight: 700;
+    font-size: 20px;
+  }
 `;
 
 export const Button = styled.div`
