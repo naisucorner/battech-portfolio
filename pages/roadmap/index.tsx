@@ -400,8 +400,8 @@ const Roadmap: NextPage = () => {
                         </Date>
                       )}
 
-                      {content.map(({ event, data }) => (
-                        <Events>
+                      {content.map(({ event, data }, index) => (
+                        <Events key={index}>
                           <Logo>
                             <LogoIcon />
 

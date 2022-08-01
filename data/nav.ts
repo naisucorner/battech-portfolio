@@ -1,11 +1,13 @@
-const listNav = [
+interface Nav {
+  name: string;
+  path: string;
+  children?: string[];
+}
+
+const listNav: Nav[] = [
   {
     name: "Home",
     path: "/",
-  },
-  {
-    name: "Our Ecosystem",
-    path: "/our-ecosystem",
   },
   {
     name: "Roadmap",
@@ -18,17 +20,14 @@ const listNav = [
   {
     name: "Media & News",
     path: "/media-news",
-    children: [],
-  },
-  {
-    name: "Resources",
-    path: "/resources",
-    children: [],
   },
   {
     name: "About Us",
     path: "/about-us",
-    children: [],
+  },
+  {
+    name: "Contact",
+    path: "/contact",
   },
 ];
 
